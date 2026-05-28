@@ -1,0 +1,13 @@
+[project]
+name = "bvh-bridge"
+version = "0.1.0"
+description = "Template-based conversion and closed-loop validation for LaFAN1, Nokov, and Wbody BVH files."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bvh_bridge*"]
