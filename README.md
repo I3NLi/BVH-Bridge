@@ -29,14 +29,14 @@ intermediate joints in `lost_joints`.
 From `/home/hiyio/engineai`:
 
 ```bash
-PYTHONPATH=tools/bvh_bridge python -m bvh_bridge.cli inspect input.bvh
+PYTHONPATH=third_party/bvh_bridge python -m bvh_bridge.cli inspect input.bvh
 
-PYTHONPATH=tools/bvh_bridge python -m bvh_bridge.cli convert \
+PYTHONPATH=third_party/bvh_bridge python -m bvh_bridge.cli convert \
   --input input.bvh \
   --target nokov \
   --output output_nokov.bvh
 
-PYTHONPATH=tools/bvh_bridge python -m bvh_bridge.cli validate \
+PYTHONPATH=third_party/bvh_bridge python -m bvh_bridge.cli validate \
   --lafan /home/hiyio/GMR_hxl/Motion_data/lafan1/fight1_subject2.bvh \
   --nokov /home/hiyio/engineai/data/official/boxing_motions/raw_bvh/540huixuantitui_001.bvh \
   --wbody /home/hiyio/engineai/data/raw/xiayao2026-Wbody0.bvh \
